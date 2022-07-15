@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    position: absolute;
+}
+
+.example-card {
+    max-width: 900px;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+
+.example-header-image {
+    background-image: url('../../assets/drstrange.jpg');
+    background-size: cover;
+}
+
+mat-card-title {
+    color: #293c9e;
+}
+
+mat-card-subtitle {
+    color:#304196;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+mat-card-actions {
+    margin-left: 30%;
+}

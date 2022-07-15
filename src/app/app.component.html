@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+     <mat-icon>menu</mat-icon>  
+     <span> {{title}} </span>
+     <div class="menu">
+          <button mat-raised-button color="primary" routerLink="/dashboard"> Dashboard</button>
+          <button mat-raised-button color="primary" routerLink="/heroes">List of heroes</button>
+          <button mat-raised-button color="primary" routerLink="/cocktail">Cocktail</button>
+     </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

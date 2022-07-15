@@ -1,0 +1,15 @@
+<div>
+  <mat-label>Do you wanna search a hero? </mat-label>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label> Hero search </mat-label>
+    <input #searchBox matInput placeholder="Ex. Bombasto" (input)="search(searchBox.value)">
+    
+  </mat-form-field>
+  <ul>
+    <li *ngFor="let hero of heroes$ | async">
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>

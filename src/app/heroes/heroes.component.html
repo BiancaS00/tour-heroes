@@ -1,0 +1,26 @@
+<div class="title-container">
+    <h2 class="title-content">
+        List of heroes:
+    </h2>
+</div>
+<div class="main-container">
+    <div class="second-container">
+        <div class="list-container">
+            <ul class="heroes">
+                <li *ngFor="let hero of heroes">
+                    <a routerLink="/detail/{{hero.id}}">
+                        <button mat-button color="primary" class="hero-btn">
+                            {{hero.id}}. {{hero.name}}
+                        </button>
+                    </a>
+                    <button mat-raised-button color="primary" (click)="delete(hero)" class="delete-btn"> 
+                        Delete 
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="add-hero-container">
+        <app-new-hero></app-new-hero>
+    </div>
+</div>
