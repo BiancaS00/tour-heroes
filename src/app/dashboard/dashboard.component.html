@@ -1,0 +1,20 @@
+<div class="top-container">
+    <div class="title"> Top Heroes </div>
+    <div class="search-container">
+        <app-hero-search></app-hero-search>
+    </div>
+    <div class="detail">
+        <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+            <mat-card class="example-card">
+                <mat-card-title-group>
+                    <mat-card-title> {{hero.name}} </mat-card-title>
+                    <img mat-card-sm-image src="../../assets/drstrange.jpg">
+                </mat-card-title-group>
+                <mat-card-content>
+                    <button mat-raised-button color="primary"> See details about {{hero.name}} </button>
+                </mat-card-content>
+            </mat-card>
+        </a>
+    </div>
+
+</div>

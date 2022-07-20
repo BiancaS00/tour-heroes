@@ -1,0 +1,27 @@
+@import '../../assets/mixinis.scss';
+
+.title {
+    @include head;
+}
+.search-container {
+    margin-left: 60px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+}
+
+.example-card {
+    margin: 60px;
+    width: 60%;
+    overflow-x: hidden;
+}
+
+mat-card-title {
+  color: #7986cb;
+}
+
+mat-card-content {
+    margin-top: 10%;
+}

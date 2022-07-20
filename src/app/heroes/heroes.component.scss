@@ -1,0 +1,30 @@
+@import '../../assets/mixinis.scss';
+
+.main-container {
+  font-size: 20px;
+  color: black;
+  display: flex
+}
+
+.title-content {
+  line-height: 50px;
+  @include head;
+}
+
+.second-container {
+  color: #7986cb;
+  margin-left: 5%;
+}
+
+.hero-btn {
+  width: 150px;
+}
+
+.delete-btn {
+  margin-bottom: 8px;
+}
+
+.add-hero-container {
+  margin-left: 40%;
+  margin-top: 5%;
+}
