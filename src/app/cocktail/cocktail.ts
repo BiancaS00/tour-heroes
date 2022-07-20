@@ -4,3 +4,7 @@ export interface Cocktail {
     strInstructions: string;
     strDrinkThumb: string;
 }
+
+export interface Drinks {
+    drinks: Cocktail[];
+}

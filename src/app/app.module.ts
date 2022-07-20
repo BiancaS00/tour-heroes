@@ -22,8 +22,11 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
+=======
+>>>>>>> db7eafe8f0750f46371715940da9af98e652506c
 import { NewHeroComponent } from './new-hero/new-hero.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CocktailComponent } from './cocktail/cocktail.component';
@@ -54,9 +57,12 @@ import { CocktailComponent } from './cocktail/cocktail.component';
     MatSidenavModule,
     MatCardModule,
     HttpClientModule,
+<<<<<<< HEAD
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false}
     ),
+=======
+>>>>>>> db7eafe8f0750f46371715940da9af98e652506c
     ReactiveFormsModule
   ],
   providers: [],

@@ -20,7 +20,6 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-    "angular-in-memory-web-api": "^0.14.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -38,4 +37,8 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.7.2"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> db7eafe8f0750f46371715940da9af98e652506c

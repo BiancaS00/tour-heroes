@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { BehaviorSubject, debounceTime, distinctUntilChanged, Observable, Subject, switchMap, tap } from 'rxjs';
+import { debounceTime, distinctUntilChanged, Observable, Subject, switchMap, tap } from 'rxjs';
 import { Hero } from '../heroes/hero';
 import { HeroService } from '../services/hero.service';
 
@@ -13,10 +12,6 @@ export class HeroSearchComponent implements OnInit {
 
   heroes$!: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
-
-  heroes = new BehaviorSubject<Hero[]>([]);
-
-  searchControl: FormControl = new FormControl();
 
   constructor(private heroService: HeroService) {
   }
