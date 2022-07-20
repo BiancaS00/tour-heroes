@@ -1,7 +1,26 @@
-<div>
-    <ul *ngFor="let cocktail of cocktails ">
-        <li>
-            {{cocktail.strDrink}}
-        </li>
-    </ul>
+<div *ngIf="cocktails" class="card-container">
+  <mat-label class="title-container"> Cocktails </mat-label>
+    <div class="search-container">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <input matInput #cocktailSearch type="text" [(ngModel)]="listFilter" placeholder="Please enter a cocktail name">
+      </mat-form-field>
+      <mat-label>You searched: {{listFilter}}</mat-label>
+    </div>
+    <div *ngFor="let cocktail of filteredCocktails ">
+        <div>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{cocktail.strDrink}}</mat-card-title>
+                  <mat-card-subtitle> With id: {{cocktail.idDrink}} </mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image *ngIf="cocktail?.strDrinkThumb" src="{{cocktail.strDrinkThumb}}" >
+                <mat-card-content>
+                  <p>
+                    {{cocktail.strInstructions}}
+                  </p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+    </div>
 </div>

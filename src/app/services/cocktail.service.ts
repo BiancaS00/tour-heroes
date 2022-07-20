@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Cocktail } from '../cocktail/cocktail';
+import { Observable, of, tap } from 'rxjs';
+import { Cocktail, Drinks } from '../cocktail/cocktail';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,8 @@ export class CocktailService {
 
   constructor(private http: HttpClient) { }
 
-  getCocktail(): Observable<Cocktail[]> {
-    return this.http.get<Cocktail[]>(this.cocktailUrl);
+  getCocktail(): Observable<Drinks> {
+    return this.http.get<Drinks>(this.cocktailUrl);
   }
 
 }
